@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <title>NEAR Staking Pool</title>
+    <link href="./assets/css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/index.css" rel="stylesheet" type="text/css" />
+    <link href="./assets/css/layer.css" rel="stylesheet" type="text/css" />
+    <script src="assets/js/offset.js"></script>
+</head>
+<body>
+
+<div class="login-wrap">
+    <div class="users">
+        <img src="assets/images/t001.png" alt="user">
+        <button class="loginOut"></button>
+    </div>
+    <div class="detailWrap">
+        <div class="detailBoxBg">
+            <img src="assets/images/bg3.png" alt="img">
+            <div class="boxTopIcon">
+                /
+            </div>
+            <div class="detailBox">
+                <div class="detailBoxTop clearfix">
+                    <div class="right">
+                        <div class="canvasWrap">
+                            <canvas id="canvas"></canvas>
+                            <div class="canvasText"><span class="scale">0%</span></div>
+                        </div>
+                    </div>
+                    <div class="detailNums">
+                        <ul>
+                            <li>
+                                <div class="BTLeft BTLeftBor left">Available</div>
+                                <div class="BTLeft left Available nicon">0</div>
+                            </li>
+                            <li>
+                                <div class="BTLeft BTLeftBor left">Can withdraw</div>
+                                <div class="BTLeft left CanWithdraw">0</div>
+                            </li>
+                            <li>
+                                <div class="BTLeft BTLeftBor left">Staking balance</div>
+                                <div class="BTLeft left StakingBalance nicon">0</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="detailBoxTop clearfix" style="border-bottom:1px solid #a3a8ae">
+                    <div class="right">
+                        <div class="canvasTest"><span class="curDate">0</span></div>
+                    </div>
+                    <div class="detailNums">
+                        <ul>
+                            <li>
+                                <div class="BTLeft BTLeftBor left" style="color: #68cdff;">Total Balance</div>
+                                <div class="BTLeft left TotalBalance nicon">0</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="detailBoxBottom">
+                    <div class="buttonList"><div class="buttonListIcon" data-type="Deposit"><img src="assets/images/btn02.png" alt="icon"></div></div>
+                    <div class="buttonList"><div class="buttonListIcon" data-type="Withdraw"><img src="assets/images/btn03.png" alt="icon"></div></div>
+                    <div class="buttonList"><div class="buttonListIcon" data-type="Stake"><img src="assets/images/btn04.png" alt="icon"></div></div>
+                    <div class="buttonList"><div class="buttonListIcon" data-type="Unstake"><img src="assets/images/btn05.png" alt="icon"></div></div>
+                </div>
+            </div>
+        </div>
+        <div class="indexCenter">
+            <div class="owImg"><img src="assets/images/ow2.png" alt="icon"><span class="PoolID">/</span></div>
+            <div class="vaImg"><button>Cur Height</button><span class="curHeight">0</span></div>
+        </div>
+
+    </div>
+    <div class="totalWrap">
+        <div class="totalist" style="background-image:url('assets/images/bg4.png')">
+            <div class="left"><i class="totalIcon" style="background-image:url('assets/images/icon001.png')"></i></div>
+            <div class="totalText left"><span>Total Staking</span></div>
+            <div class="totalText right"><span class="TotalStaking nicon">0</span></div>
+        </div>
+        <div class="totalist" style="background-image:url('assets/images/bg5.png');top:-.1rem;">
+            <div class="left"><i class="totalIcon" style="background-image:url('assets/images/icon002.png')"></i></div>
+            <div class="totalText left"><span>Owner ID</span></div>
+            <div class="totalText right"><span class="Owner">0</span></div>
+        </div>
+        <div class="totalist" style="background-image:url('assets/images/bg6.png');top:-.2rem;">
+            <div class="left"><i class="totalIcon" style="background-image:url('assets/images/icon003.png')"></i></div>
+            <div class="totalText left"><span>Status</span></div>
+            <div class="totalText right"><span class="PoolStatus nicon">0</span></div>
+        </div>
+        <div class="totalist" style="background-image:url('assets/images/bg7.png');top:-.3rem;">
+            <div class="left"><i class="totalIcon" style="background-image:url('assets/images/icon004.png')"></i></div>
+            <div class="totalText left"><span>Reward Fee Rate</span></div>
+            <div class="totalText right"><span class="RewardFeeRate">0</span></div>
+        </div>
+    </div>
+</div>
+<div class="layerWrap">
+    <div class="layerBox">
+        <div class="layerTop">
+            <span class="accountType" data-type="Deposit" style="background-image:url('assets/images/Deposit.png')"></span>
+            <button></button>
+        </div>
+        <div class="layerStatusWrap">
+            <div class="layerStatusList on">
+                <img class="neTag1" src="assets/images/ne03.png" alt="status">
+                <div class="layerTestTitle fromName">xxx</div>
+                <div class="layerTestDetail nicon3"><span class="fromBalanceQuantity">0</span><i class="niconTogA"></i></div>
+            </div>
+            <div class="layerStatusList" style="padding-top:.4rem;">
+                <img src="assets/images/ne02.png" alt="status">
+            </div>
+            <div class="layerStatusList on">
+                <img class="neTag2" src="assets/images/ne01.png" alt="status">
+                <div class="layerTestTitle toName">xxx</div>
+                <div class="layerTestDetail nicon3"><span class="toBalanceQuantity">0</span><i class="niconTogB"></i></div>
+            </div>
+        </div>
+        <div class="layerWriteWrap">
+            <div class="layerWriteName">/</div>
+            <div class="layerTestWrite">
+                <input class="layerValTest" type="text" placeholder="0,000,000" onkeyup="this.value=this.value.replace(/[^\d]/g,'')" onpause="this.value=this.value.replace(/[^\d]/g,'')">
+            </div>
+        </div>
+        <div class="layerButtonWrap">
+            <button class="uploadBtn"></button>
+        </div>
+    </div>
+</div>
+<script src="./assets/js/near-api-js.js"></script>
+<script src="./assets/js/js.cookie.min.js"></script>
+<script src="./assets/js/jquery.js"></script>
+<script src="./assets/js/base64.js"></script>
+<script src="./assets/js/layer.js"></script>
+<script src="./assets/js/echarts_event.js"></script>
+<script src="./assets/js/config.js"></script>
+<script src="./assets/js/main.js"></script>
+<script src="./assets/js/index.js"></script>
+</body>
+</html>

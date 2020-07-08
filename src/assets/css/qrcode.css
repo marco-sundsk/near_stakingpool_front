@@ -1,0 +1,29 @@
+.qecode-wrapper {
+    width: 100%;
+    min-height: 100vh;
+    background: url('../images/qrcode_bg.png') top no-repeat;
+    background-size: contain;
+}
+
+.qecode-wrapper .back {
+    line-height: 12vh;
+    margin-left: 5%;
+}
+.qecode-wrapper .back img{
+    width: 18px;
+}
+.title {
+    color:#fff;
+    font-size: 18px;
+    margin-bottom: 40vh;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.font {
+    font-size: 15px;
+    margin-top: 20px;
+}

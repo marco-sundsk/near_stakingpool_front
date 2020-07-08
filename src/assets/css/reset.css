@@ -1,0 +1,33 @@
+
+article,aside,dialog,footer,header,section,footer,nav,figure,menu,body, div, dl, dt, dd, ul, ol, li, p, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, button, input, textarea, img, blockquote, th,tr, td { margin:0; padding:0;-webkit-tap-highlight-color: rgba(255, 255, 255, 0);}
+ul {list-style:none}
+li {list-style:none}
+a {text-decoration:none;}
+img {border:0px}
+input, button, textarea, select,a{ font-size:100%; outline:none; resize:none;border:none;background:none;-webkit-tap-highlight-color:transparent}
+table {border-collapse: collapse; border-spacing:0; }
+input{vertical-align:middle}table{border-collapse:collapse;border-spacing:0; width:100%}p{word-wrap:break-word}.clr{clear:both;}
+.l{float:left}.r{float:right}.undis{display:none}.dis{display:block}.dinl{display:inline-block}.prel{position:relative}.pabs{position:absolute}.bor{border:0}.ovf{overflow:hidden} .vih{ visibility:hidden}
+article,aside,dialog,footer,header,section,footer,nav,figure,menu{display:block}
+div,section {word-break: break-all;}
+.clear {height:0; clear:both;}
+.clearfix { *zoom:1;}
+.clearfix:after{clear:both; display:block; height:0; visibility:hidden; line-height:0; content:'\20';}
+/*边距*/
+*{box-sizing:border-box;    -webkit-box-sizing:border-box;    -moz-box-sizing:border-box;    -o-box-sizing:border-box;}
+.left{
+    float:left;
+}
+.right{
+    float:right;
+}
+body {font-family: arial,"Arial","Microsoft YaHei";max-width:540px;margin: auto;position:relative}
+
+
+@media (min-width:641px) {
+    html,body {
+        /*max-width:none;*/
+        /*width: 56vh;*/
+        margin: auto;
+    }
+}
